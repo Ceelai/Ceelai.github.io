@@ -26,6 +26,18 @@ and open the template in the editor.
                 background-color: #ddd;
             }
 
+            #Deloreand{
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .btn{
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+
 
         </style>
     </head>
@@ -62,11 +74,12 @@ and open the template in the editor.
                     <h4>Space Dodgers</h4>
                     <img class="img-responsive" src="spacedodgerscreenshot.PNG" alt="space dodger screenshot"/>
                     <div class="row">
-                        <div class="col-lg-6">
+                        <div class="col-md-6">
                             <a href="#" class="btn btn-info" data-placement="left" data-toggle="popover" data-trigger="hover"  title="Space Dodger Info" data-content="A flappy bird type game written in C# using Windows Forms.">Info</a>
                         </div>
-                        <div class="col-lg-6">
+                        <div class="col-md-6">
                             <a class="btn btn-primary" href="https://github.com/Ceelai/SpaceDodger"  id="spacedodgerbtnGit">Link to Github Repository</a>
+
                         </div>
                     </div>
                 </div>
@@ -74,29 +87,50 @@ and open the template in the editor.
                     <h4>Blade Game</h4>
                     <img class="img-responsive" src="bladecardGameScreenShot.PNG" alt="card game screenshot"/>
                     <div class="row">
-                        <div class="col-lg-6">
+                        <div class="col-md-6">
                             <a class="btn btn-primary " href="https://github.com/Ceelai/BladeCardGame"  id="bladecardGit">Link to Github Repository</a>
                         </div>
-                        <div class="col-lg-6">
-                            <a href="#" class="btn btn-info" data-placement="right" data-toggle="popover" data-trigger="hover"  title="Blade Card Game Info" data-content="A Card Game Based on a Minigame from Legend of Heroes Series">Info</a>
+                        <div class="col-md-6">
+                            <a href="#" class="btn btn-info" data-placement="left" data-toggle="popover" data-trigger="hover"  title="Blade Card Game Info" data-content="A Card Game Based on a Minigame from Legend of Heroes Series">Info</a>
                         </div>
                     </div>
 
                 </div>
             </div>
-            
-            
+            <div class="row">
+                <header class="col-lg-12">
+                    <h3>My Other Projects</h3>
+                </header>    
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <h4>Discord Bot: DeLorean (Back to the Future Inspired)</h4>
+
+                    <img id="Deloreand" class="img-responsive" src="deloreanDiscord.PNG" alt="Discord Bot Screenshot"/>
+                </div>
+                <div class="col-lg-6">
+                    <h4>&NoBreak;</h4>
+                    <img class="img-responsive" src="Testpic.png" alt="Example of Bot Working"/>
+                    <a href="#" class="btn btn-info" data-placement="left" data-toggle="popover" data-trigger="hover"  title="Blade Card Game Info" data-content="A Bot that responds to commands that users input. Used in the popular VoIP application Discord.">Info</a>
+                </div>
+
+            </div>
+
             <div class="panel-footer row">
                 <p id="footercc">Created by Calvin Lai 2017. Using Bootstrap, JS, CSS and HTML</p>
             </div>
         </div>
-        
+
         <script>
 
 
             $(document).ready(function () {
                 $('[data-toggle="popover"]').popover();
             });
+
+
+            
+
         </script>
     </body>
 </html>
