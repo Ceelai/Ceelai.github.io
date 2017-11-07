@@ -12,34 +12,70 @@ and open the template in the editor.
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-        <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>-->
+        <style>
+            .nav {
+                color: rgba(0,0,0,1);
+            }
+
+            .navbar-default{
+                color: rgba(85, 85, 85, 1);
+                background-color: rgba(231, 231, 231, 1);
+            }
+
+            .navbar-nav:hover{
+                background-color: #ddd;
+            }
+        </style>
     </head>
     <body>
         <div class="container">
-            <nav class="navbar navbar-nav">
+            <nav  class="navbar navbar-default">
                 <div class="container-fluid">
                     <div class="navbar-header">
                         <a class="navbar-brand" href="#">Calvin Lai Portfolio</a>
                     </div>
                     <ul class="nav navbar-nav">
-                        <li><a href="#">Home</a></li>
+                        <li class=""><a href="#">Home</a></li>
                     </ul>
                 </div>
             </nav>
+        </div>
 
-
+        <div class="container">
             <div class="row">
                 <header class="col-lg-12">
+                    <h3>Hi! I'm Calvin.</h3>
+                    <p>I am currently a 3rd year student in the Honours Bachelor of Applied Computer Science (Mobile Computing) Program at Sheridan College.</p>
 
                 </header>
             </div>
+            <div class="row">
+                <header class="col-lg-12">
+                    <h3>My Projects</h3>
+                    <div class="col-lg-6">
+                        <h4>Space Dodgers</h4>
+                        <img src="spacedodgerscreenshot.PNG" alt=""/>
+                        <button class="btn btn-primary" id="spacedodgerbtnGit">Link to Github</button>
+                    </div>
+                    <div class="col-lg-6">
+                        <h4>Blade Game</h4>
+                    </div>
+
+                </header>    
 
 
 
-
+            </div>
         </div>
-
+        <script>
+            $(document).on("pagecreate", function () {
+                var $spgbtn = $("#spacedodgerbtnGit");
+                
+                $spgbtn.click(function(){
+                    
+                });
+            
+            });
+        </script>
     </body>
 </html>
