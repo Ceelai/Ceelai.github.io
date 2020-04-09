@@ -1,0 +1,349 @@
+@import url('https://fonts.googleapis.com/css?family=Heebo:300,400,500,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap');
+
+
+/* General Element CSS */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    color: #0C0900;
+    
+    /* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; */
+    /* font-family: 'Heebo', sans-serif; */
+    font-family: 'Roboto', sans-serif;
+}
+
+hr {
+    display: inline-block;
+    width: 40px;
+    margin-bottom: 20px;
+    border-color: #b5d4cc;
+    background-color: #b5d4cc;
+    padding-bottom: 1px;
+}
+
+/* Header and Navbar CSS*/
+#header-container{
+    max-width: 1100px;
+    margin: 0px auto; 
+    background-color: #f9f8f7;
+}
+
+#navbar-container{
+    background-color: white;
+    max-width: inherit;
+    display: inline;
+}
+
+
+#inner{
+    margin: 0;
+    padding: 0;
+    line-height: inherit;
+}
+
+#master-brand{
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    color: black;
+    float: left;
+   
+}
+
+#brand{
+    line-height: inherit;
+}
+#master-brand:hover{
+    color: #7ca5cf;
+}
+
+#nav-master{
+    display: inline;
+    float: right;
+}
+
+/* Jumbotron CSS*/ 
+.jumbotron {
+  color: black;
+  font: inherit;
+  /*background: linear-gradient(rgba(247,247,249, 0.9), rgba(247,247,249, 0.9)),
+  url("img/header_img.jpg");*/
+  background-image: url("img/headerbackground.png");
+  background-color: rgb(181, 212, 204);
+  max-height: 433px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 25px;
+  height: 100vh;
+}
+
+#work-links{
+    color: black;
+    padding: 0;
+    border: 0;
+    margin: 0;
+}
+
+#work-links:hover{
+    color: #7ca5cf;
+}
+
+#greeting{
+    font-size: 40px;
+}
+
+#about{
+    padding-left: 10%;
+    padding-top:  5%;
+    margin: inherit;
+}
+
+#capabilities{
+    padding-left: 20%;
+    padding-top: 10%;
+    margin: inherit;
+}
+
+/*Information CSS*/
+#information{
+    font-size: 14px;
+    font-weight: 400;
+}
+
+#title-area{
+    text-decoration-line: underline;
+    text-decoration-color: #7ca5cf;
+}
+
+#work-links-txt{
+    float: left;
+    color: black;
+    font-size: 10px;
+    
+}
+
+#cert-link{
+    color: black;
+    font-size: 14px;
+    list-style: none;
+
+}
+
+#cert-link:hover{
+    color: #7ca5cf;
+    
+}
+
+
+/*Projects CSS*/
+.card-title{
+    font-size: 16px;
+}
+
+.card-text{
+    font-size: 14px;
+}
+
+.proj-link{
+    border-radius: 16px;
+}
+
+.card-img-top{
+    background-position: center;
+}
+
+.btn-primary{
+    background-color: white;
+    border-color: white;
+    color: #54575a;
+}
+
+.btn-primary:hover{
+    background-color: #b5d4cc;
+    border-color: #b5d4cc;
+    color:black;
+}
+
+.card{
+    background-color: #eeedea;
+    height: 283px;
+    width: 316px;    
+}
+
+#card-float1{
+    float:right;
+}
+
+#card-float2{
+    float:left;
+}
+
+
+/*Footer CSS*/
+#foot{
+    padding-top: 30px;
+    font-size: 10px;
+}
+/*Media Queries*/
+
+
+
+  @media(max-width:360px){
+    #capabilities{
+        font-size: 12px !important;
+        display: ruby !important;
+        padding: inherit;
+    }
+
+    .jumbotron{
+        height: inherit;
+    }
+    .card{
+        font-size: 12px !important;
+        height: inherit;
+        max-width: 360px;    
+        width: inherit;
+    }
+    .btn{
+       font-size: inherit !important;
+    }
+    
+    #about{
+        font-size: 14px;
+    }
+    #greeting{
+        font-size: 25px;
+    }
+
+
+  }
+  
+  /* Extra small devices (portrait phones, less than 576px)*/
+  @media (max-width: 575px) {
+    #capabilities{
+       
+        margin: initial !important;
+        display: ruby !important;
+        font-size: 18px ;
+    }
+    
+    #about{
+        padding-left: 10% !important;
+    }
+    
+  
+     
+  }
+  
+  /* Small devices (landscape phones, less than 768px)*/
+  @media (max-width: 767px) {
+    #nav-master{
+        display: inline-block;
+    }
+    #capabilities{
+        text-align: left !important;
+        padding-left: 0%;
+        padding-top: 0%;
+    }
+
+ 
+    #about{
+        flex: none;
+        padding-top: 0%;
+        padding-left: 0%;
+        max-width: none;
+    }
+
+    #card-float1{
+        float: none;
+        margin-top: -1.5rem;
+        margin-bottom: 1.5rem;
+        
+    }
+
+    #title-area{
+        text-align: center !important;
+    }
+
+    #card-float2{
+        float: none;
+        
+    }
+    .card{
+      margin-bottom: 1.5rem;
+     display: inline-block !important;
+    }
+
+     
+
+   }
+  
+  /* Medium devices (tablets, less than 992px)*/
+  @media (max-width: 991px) {
+      .jumbotron{
+          max-height: 433px;
+      }
+      .card{
+          display: table-cell;
+      }
+    }
+  
+  /*/ Large devices (desktops, less than 1200px)*/
+  @media (max-width: 1199px) {  }
+  
+  /* Extra large devices (large desktops)*/
+  /* No media query since the extra-large breakpoint has no upper bound on its width*/
+ 
+  /* Animation CSS */
+  .fade-in {
+    animation: fadeIn ease 3s;
+    -webkit-animation: fadeIn ease 3s;
+    -moz-animation: fadeIn ease 3s;
+    -o-animation: fadeIn ease 3s;
+    -ms-animation: fadeIn ease 3s;
+
+  }@keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-moz-keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-webkit-keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-o-keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-ms-keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+  }
