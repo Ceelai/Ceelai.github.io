@@ -116,13 +116,13 @@ hr {
 #work-links-txt{
     color: black;
     font-size: 10px;
-    justify-content: center;
-    display: flex;
-    align-items: center;
+    justify-content: center !important;
+    display: flex !important;
+    align-items: center !important;
 }
 
 .hr1{
-    display: block;
+    display: block !important;
 }
 
 #cert-link{
