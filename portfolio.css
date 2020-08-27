@@ -114,12 +114,11 @@ hr {
 }
 
 #work-links-txt{
+    color: black;
+    font-size: 10px;
     justify-content: center;
     display: flex;
     align-items: center;
-    color: black;
-    font-size: 10px;
-    
 }
 
 .hr1{
