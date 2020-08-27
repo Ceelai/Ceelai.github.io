@@ -11,7 +11,7 @@ body, html {
 }
 
 hr {
-    display: inline-block;
+    display: block;
     width: 40px;
     margin-bottom: 20px;
     border-color: #b5d4cc;
@@ -121,9 +121,7 @@ hr {
     align-items: center !important;
 }
 
-.hr1{
-    display: block !important;
-}
+
 
 #cert-link{
     color: black;
